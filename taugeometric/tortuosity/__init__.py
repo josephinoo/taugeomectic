@@ -1,0 +1,1 @@
+from .__funcs__ import tortuosity_geometric_2d
