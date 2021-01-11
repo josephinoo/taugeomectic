@@ -12,7 +12,7 @@ TauGeometric is a set of tools to get the geometric tortuosity from 2D images of
 
 **Where**:
 
-**Ld** is the mean of the values calculated previously 
+**Ld** is the mean of the paths's lenght calculated previously 
 
 **L** is the lenght of the axis taken, commonly the horizontal axis.
 
