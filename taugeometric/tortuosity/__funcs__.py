@@ -42,15 +42,19 @@ def tortuosity_geometric_2d(maze,showStreamline=False):
             if(data != None):
                 selection_path.append(metric_euclidian(data))
                 pahts.append(data)
-                
-        minimum=np.array(selection_path).min()
-        position=selection_path.index(minimum)
-        path_show.append(pahts[position])
-        f_data.append(minimum)
+        if(len(selection_path)!=0):
+            minimum=np.array(selection_path).min()
+            position=selection_path.index(minimum)
+            path_show.append(pahts[position])
+            f_data.append(minimum)
     if(showStreamline):
         show_streamlines(maze,path_show)
     t_g=np.mean(f_data)/(line_maze_h)
-    return t_g
+    print(t_g)
+    if(t_g<1):
+       return None
+   return t_g
+    
 
 
     
