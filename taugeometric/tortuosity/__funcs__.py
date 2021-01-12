@@ -39,7 +39,7 @@ def tortuosity_geometric_2d(maze,showStreamline=False):
         pahts=[]
         for j in p_e:
             data = astar(maze, i, j)
-            if(data != None):
+            if(len(data)>=2 ):
                 selection_path.append(metric_euclidian(data))
                 pahts.append(data)
         if(len(selection_path)!=0):
@@ -50,11 +50,10 @@ def tortuosity_geometric_2d(maze,showStreamline=False):
     if(showStreamline):
         show_streamlines(maze,path_show)
     t_g=np.mean(f_data)/(line_maze_h)
-    print(t_g)
     if(t_g<1):
        return None
     return t_g
-    
+
 
 
     
