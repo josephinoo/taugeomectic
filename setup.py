@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="taugeometric",
-    version="1.0.0",
+    version="1.0.2",
     author="Mayken Espinoza -  Joseph Avila - Javier Pagalo ",
     author_email="josdavil@espol.edu.ec",
     description="TauGeometric is a set of tools to get the geometric tortuosity from 2D images of porous materials",

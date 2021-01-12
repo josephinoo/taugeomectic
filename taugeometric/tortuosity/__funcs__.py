@@ -53,7 +53,7 @@ def tortuosity_geometric_2d(maze,showStreamline=False):
     print(t_g)
     if(t_g<1):
        return None
-   return t_g
+    return t_g
     
 
 
