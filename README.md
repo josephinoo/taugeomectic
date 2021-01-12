@@ -53,11 +53,6 @@ Total geometric paths=**N(S)×N(E)**
 
 TauGeometric relies heavily on the Scipy Stack, as it uses the Porespy library. Make sure you get Python 3.6+ version.
 
-Once you've installed Conda, you can then install TauGeometric. It is available on the Python Package Index 
-and can be installed by typing the following at the conda prompt:
-
-    pip install taugeometric
-or 
 
     git clone https://github.com/eljosephavila123/taugeomectic.git 
 
