@@ -49,6 +49,22 @@ To find the total geometric paths the carnality of each set is multiplied.
 Total geometric paths=**N(S)×N(E)**
 
 
+
+# Examples
+
+``` python
+import taugeometric as tg
+import porespy as ps
+import numpy as np
+import matplotlib.pyplot as plt
+
+im = ps.generators.blobs(shape=[30, 30], porosity=0.80, blobiness=0.5)
+maze = np.logical_not(im)
+maze = np.array(maze, dtype=int)
+plt.imshow(im)
+print(tg.tortuosity.tortuosity_geometric_2d(maze))
+```
+
 # Installation 
 
 TauGeometric relies heavily on the Scipy Stack, as it uses the Porespy library. Make sure you get Python 3.6+ version.
@@ -73,19 +89,5 @@ On Mac or Linux, you need to open a normal terminal window,
 then type source activate {env} where you replace {env} with the name 
 of the environment you want to install TauGeometric.
 
-# Examples
-
-``` python
-import taugeometric as tg
-import porespy as ps
-import numpy as np
-import matplotlib.pyplot as plt
-
-im = ps.generators.blobs(shape=[30, 30], porosity=0.80, blobiness=0.5)
-maze = np.logical_not(im)
-maze = np.array(maze, dtype=int)
-plt.imshow(im)
-print(tg.tortuosity.tortuosity_geometric_2d(maze))
-```
 
 
